@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles-two.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+        </style>
+         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+         <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()> 210){
+                        $("#fade" ).css({"opacity": "0"})
+                    }
+                else {
+                    $("#fade").css({"opacity" : "1"})
+                }
+                })
+            })
+
+
+
+
+            window.onload = function() {
+            setTimeout (function () {
+             scrollTo(0,0);
+            }, 50); //100ms for example
+           }
+
+
+           $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()< 500){
+                        $(".section-a").css({"background-color": "#344d60"})
+                    }
+                else {
+                    $(".section-a").css({"background-color": "white"})
+                }
+                })
+            })
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()< 400){
+                        $(".section-b").css({"background-color": "white"})
+                    }
+                else {
+                    $(".section-b").css({"background-color": "#344d60"})
+                }
+                })
+            })
+
+
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()< 1500){
+                        $(".section-b").css({"background-color": "#344d60"})
+                    }
+                else {
+                    $(".section-b").css({"background-color": "black"})
+                }
+                })
+            })
+         </script>
+         
+         
+
+
+
+
+    </head>
+    <body>
+        <header class="v-header container">
+            
+            <div class="fullscreen-video-wrap">
+
+            <video id="videoBG" poster="./img/poster.jpg" autoplay muted loop>             
+            <source src="./img/video.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="header-overlay">
+                
+            </div>
+    <div class="header-content ">
+        <div class="menu" id="fade"> 
+          <a href="#about"> About </a>
+          <a href="#project"> Projects </a>
+          <a href="#fim"> Contact </a>
+        </div>
+        <div class="center">
+         <h2> I'm Igor and I build things on the internet.</h2>
+        </div>
+        
+        </div>
+        <div class="avatar" ><img src="./img/avatar.png"/> </div>
+
+        </header>
+       
+
+        <section class="section-a" id="about">
+            <div class="about-center">
+                
+                <span>Welcome</span>
+                
+                <p id="fonte">I'm Igor, currently I live in Uberlândia, Minas Gerais! I'm a guy passionate about development and all its challenges.</p>
+                <p id="fonte">My favorite technologies are:</p>
+                <div class="tecs">
+                    
+                    <div style="margin: 5px;height: 150px;">
+                        <img src="./img/react.png" style="height: 150px; width: auto;" />
+                        <p id="fonte">React.JS</p>
+                    </div><div style="margin: 5px;height: 150px;">
+                        <img src="./img/node.png" style="height: 150px; width: auto;" />
+                        <p id="fonte">Node.JS</p>
+                    </div>
+                    <div style="margin: 5px;height: 150px;">
+                        <img src="./img/html.png" style="height: 150px; width: auto;" />
+                        <p id="fonte">HTML 5</p>
+                    </div>
+                    <div style="margin: 5px;height: 150px;">
+                        <img src="./img/css.png" style="height: 150px; width: auto;" />
+                        <p id="fonte" style="margin-top: 0;">CSS 3</p>
+                    </div>
+                </div>
+
+                
+                
+            
+                
+
+            </div>
+        </section>
+
+
+        <section class="section-b" id="project">
+                     <div id="title-projects" >
+                     <h2">Projects</h2>
+                    </div>
+                   
+
+                </div>
+                <div class="projetc-center">   
+                    
+                    <div class="project-div2">
+                        <h3>Ecoleta</h3>
+                        <p>
+                        It connects companies and people in order to eliminate waste efficiently.</p>
+                    </div>
+
+                    <div class="project-div">
+                        <img src="./img/proj1.png" style="width: auto; height: 400px;"/>
+                    </div>
+            </div>
+
+            <div class="projetc-center">   
+
+                <div class="project-div11">
+                    <img src="./img/proj2.png" style="width: auto; height: 400px;"/>
+                </div>
+                    
+                <div class="project-div2">
+                    <h3>Snack System</h3>
+                    <p>
+                    Efficient ordering system with interface for the customer and the establishment.</p>
+                </div>
+
+               
+                </div>
+                <p id="fonte">You can see all my projects at GitHub</p><a id="git" href="https://github.com/Igorhleite/"> Say Hello! <i class="fa fa-github" style="font-size:48px;color:white"></i></a>
+                <div class="contato">
+
+                  
+
+
+                   <a href="https://www.linkedin.com/in/igor-henrique-leite-a77b37160/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+               
+                   <a href="https://www.instagram.com/igorhenriqueleite/">  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   <a href="https://github.com/Igorhleite"> <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+
+
+                </div>
+
+                    
+
+
+
+
+                </div>
+
+        </section>
+
+        
+        <div id="fim">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        
+        
+    </body>
+</html>
