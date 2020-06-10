@@ -309,9 +309,11 @@
 }    
 
 #fim{
+  position: fixed;
+  bottom: 0;
   height:1vh;
   width:100%;
-  background-color: black;
+  background-color: transparent;
 }
   
 
